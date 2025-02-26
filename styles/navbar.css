@@ -14,6 +14,7 @@
     align-items: center;
     z-index: 1000; /* Ensures it stays on top */
     text-transform: uppercase;
+    min-height: 9vh;
 }
 
 /* Title */
