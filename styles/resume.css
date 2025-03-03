@@ -1,7 +1,8 @@
 body {
     padding-top: 10dvh;
     margin: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--card-color);
+    color: var(--font-color);
     box-sizing: border-box;
 }
 
@@ -66,7 +67,7 @@ p {
 }
 
 .experience-title-block a:hover {
-    background-color: color-mix(in srgb, var(--hover-color-dark) 50%, white 50%);
+    background-color: var(--hover-color-light);
     color: black;
     border-color: var(--hover-color-dark);
 }
@@ -75,8 +76,8 @@ p {
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg);
+    box-shadow: 0 4px 6px var(--box-shadow-light);
     width: 100%;
     align-items: center;
     margin: 1rem;
@@ -86,7 +87,7 @@ p {
 
 .experience-block:hover {
     transform: scale(1.05); 
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 20px var(--box-shadow-light);
 }
 
 .experience-block-img {
@@ -125,8 +126,8 @@ p {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg);
+    box-shadow: 0 4px 6px var(--box-shadow-light);
     width: 100%;
     padding: 1.5rem;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -134,7 +135,7 @@ p {
 
 .leadership-block:hover {
     transform: scale(1.02); 
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 20px var(--box-shadow-light);
 }
 
 .leadership-block img {
@@ -151,8 +152,8 @@ p {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg);
+    box-shadow: 0 4px 6px var(--box-shadow-light);
     width: 100%;
     margin: 1rem;
     padding: 1.5rem;
@@ -162,7 +163,7 @@ p {
 
 .education-block:hover {
     transform: scale(1.05); 
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 20px var(--box-shadow-light);
 }
 
 hr {

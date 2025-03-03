@@ -20,15 +20,43 @@
 :root {
     --font-primary: 'Raleway';
     --font-heading: 'Adelia';
-    --secondary-color: color(display-p3 0.992 0.945 0.851); 
     --hover-color-dark: color(display-p3 0.69 0.53 0.75); 
     --hover-color-light: color(display-p3 0.88 0.78 0.92); 
+
+    --light-color-bg: white;
+    --light-font-main: black;
+    --light-card-color: #FFF0D6; 
+    --light-box-shadow: rgba(0, 0, 0, 0.3);
+    --light-box-shadow-light: rgba(0, 0, 0, 0.1);
+    --light-fail-color: red;
+    --light-success-color: green;
+    --light-info-color: gray;
+
+    --dark-color-bg: black;
+    --dark-font-main: white;
+    --dark-card-color: #89785b;
+    --dark-box-shadow: rgba(255, 255, 255, 0.9);
+    --dark-box-shadow-light: rgba(255, 255, 255, 0.5);
+    --dark-fail-color: rgb(255, 105, 105);
+    --dark-success-color: rgb(80, 255, 80);
+    --dark-info-color: rgb(198, 198, 198);
+
+    --color-bg: var(--light-color-bg);
+    --font-color: var(--light-font-main);
+    --card-color: var(--light-card-color);
+    --box-shadow: var(--light-box-shadow);
+    --box-shadow-light: var(--light-box-shadow-light);
+    --fail-color: var(--light-fail-color);
+    --success-color: var(--light-success-color);
+    --info-color: var(--light-info-color);
 }
 
 
 * {
     box-sizing: border-box;
     font-family: var(--font-primary);
+    /* background-color: var(--light-color-bg);
+    color: var(--light-font-main); */
 }
 
 .page-header {
@@ -42,6 +70,8 @@ main {
 body {
     display: flex;
     flex-direction: column;
+    background-color: var(--color-bg);
+    color: var(--font-color);
 }
 
 footer {
@@ -52,3 +82,5 @@ footer p {
     margin: 0;
     padding: 0;
 }
+
+.js-dependent { display: none; }

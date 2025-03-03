@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
-
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/contact.js"></script>
+    
     <header class="navbar">
         <h1>ANNIE LIU</h1>
         
@@ -38,6 +40,11 @@
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
 
+            <label class="light-dark-switch" id="toggle">
+                <input type="checkbox" id="toggle-switch">
+                <span class="slider"></span>
+            </label>
+
         </nav>
     </header>
         
@@ -46,11 +53,11 @@
         <section class="contact-form">
             <h2>Let's Connect</h2>
 
-            <form action="https://httpbin.org/post" method="POST">
+            <form id="form" action="https://httpbin.org/post" method="POST">
                 <!-- name field -->
                 <section class="field">
                     <label for="name">Name:</label>
-                    <input type="text" class="input" id="name" name="name" required>
+                    <input type="text" class="input" id="name" name="name" pattern="[A-Za-z0-9\s.,!?'\-]+" required>
                 </section>
             
                 <!-- email field -->
@@ -79,14 +86,14 @@
                 <!-- inquiry comments -->
                 <section class="field">
                     <label for="comments">Comments:</label>
-                    <textarea id="comments" class="input" name="comments" minlength="10" maxlength="200" pattern="[A-Za-z0-9\s.,!?']+" required></textarea>
+                    <textarea id="comments" class="input" name="comments" minlength="10" maxlength="300" pattern="[A-Za-z0-9\s.,!?'\-]+" required></textarea>
                 </section>
                 
             
                 <input type="hidden" name="possible_bot" value="true">
             
                 <button type="submit" class="submit-button"><b>Submit -></b></button>
-            
+                <input type="hidden" name="form-errors" id="form-errors" value="none">
                 <output class="error-message"></output>
                 <output class="info-message"></output>
             </form>

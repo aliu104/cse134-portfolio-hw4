@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding-top: 10dvh;
     height: 100dvh;
+    background-color: var(--color-bg);
+    color: var(--font-color);
 }
 
 h1 {
@@ -37,10 +39,10 @@ h1 {
 }
 
 .profile-card {
-    background: var(--secondary-color); 
+    background: var(--card-color); 
     padding: 2rem 0 0 0;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 15px var(--box-shadow);
     text-align: center;
     width: 30%;
     min-width: 300px;
@@ -53,11 +55,12 @@ h1 {
     z-index: 2;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     animation: fadeInUp 0.8s ease-in-out;
+    color: var(--font-color) !important;
 }
 
 .profile-card:hover {
     transform: scale(1.05); 
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 20px var(--box-shadow);
 }
 
 .profile-card img {
@@ -81,8 +84,8 @@ h1 {
     width: 100%;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     margin-top: 0px; 
 }
 
